@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import "sobremi";
+@import "alimentacion";
+@import "nuestrosplanes";
+@import "blog";
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+
+  .portada__index {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .main__index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section__index {
+      margin: 3% 7%;
+      padding: 2% 5% 2% 5%;
+      display: flex;
+      text-align: justify;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .titulos__index {
+        font-family: "Castoro", serif;
+      }
+    }
+
+    .img__index {
+      width: 60%;
+      margin: 3% 7%;
+      border: black 1px solid;
+    }
+
+    .aside__index {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 3% 7%;
+
+      .aside__div__index {
+        width: 40%;
+        border: 10px double black;
+        margin: 1%;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+
+        .titulos__index {
+          font-family: "Castoro", serif;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-bottom: 1%;
+
+    .titulos__index {
+      font-family: "Castoro", serif;
+    }
+
+    .redes__index {
+      border: black 3px solid;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1%;
+
+      .titulos__index {
+        font-family: "Castoro", serif;
+      }
+
+      .redes__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .body .portada__index {
+    margin-top: 100px;
+  }
+  .body .main__index .aside__index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body .main__index .aside__index .aside__div__index {
+    width: 80%;
+  }
+}

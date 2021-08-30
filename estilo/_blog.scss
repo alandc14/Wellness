@@ -1,0 +1,44 @@
+.body__blog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+
+  .main__blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% 7% 3% 7%;
+    padding: 2% 5% 2% 5%;
+
+    .section__blog {
+      display: flex;
+      flex-direction: column;
+
+      .titulos__blog {
+        font-family: "Castoro", serif;
+      }
+
+      .article__blog {
+        display: flex;
+        flex-direction: column;
+        border: black 10px double;
+        padding: 2%;
+        margin: 2%;
+        text-align: justify;
+
+        .titulos__article__blog {
+          font-weight: bold;
+          margin-top: 1%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__blog .main__blog {
+    margin-top: 125px;
+  }
+}

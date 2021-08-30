@@ -1,0 +1,199 @@
+.body__alimentacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+
+  .main__alimentacion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 10% 7% 3% 7%;
+    padding: 2% 5% 2% 5%;
+
+    .section__alimentacion {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+
+      .titulos__alimentacion {
+        font-family: "Castoro", serif;
+      }
+    }
+
+    .img__alimentacion {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 2%;
+
+      .fotos {
+        border: black 10px double;
+      }
+    }
+
+    .titulos__alimentacion {
+      font-family: "Castoro", serif;
+    }
+
+    .recetas__alimentacion {
+      margin: 1%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .acordeon__alimentacion {
+        width: 40%;
+        margin-bottom: 1%;
+
+        .div__acordeon__alimentacion {
+          width: 100%;
+          height: 50px;
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          border: black 3px solid;
+
+          .titulo__acordeon__alimentacion {
+            font-family: "Castoro", serif;
+          }
+        }
+
+        .info__acordeon__alimentacion {
+          width: 100%;
+          height: 0em;
+          overflow: hidden;
+          transition: 2s;
+          -webkit-transition: height 2s;
+          background-color: lightsalmon;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .titulo__receta {
+            font-weight: bold;
+            margin-top: 1%;
+          }
+
+          .imagen__receta {
+            border: 1px solid black;
+          }
+        }
+      }
+
+      .acordeon__alimentacion:hover .info__acordeon__alimentacion {
+        border: black 1px solid;
+      }
+
+      .acordeon__alimentacion:hover .receta1 {
+        height: 910px;
+        padding: 2%;
+      }
+
+      .acordeon__alimentacion:hover .receta2 {
+        height: 1360px;
+        padding: 2%;
+      }
+
+      .acordeon__alimentacion:hover .receta3 {
+        height: 900px;
+        padding: 2%;
+      }
+
+      .acordeon__alimentacion:hover .receta4 {
+        height: 700px;
+        padding: 2%;
+      }
+
+      .acordeon__alimentacion:hover .mas {
+        visibility: hidden;
+      }
+    }
+
+    .div__frase__alimentacion {
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1%;
+
+      .frase__alimentacion {
+        text-align: center;
+        font-family: "Allison";
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__alimentacion .main__alimentacion {
+    margin-top: 125px;
+
+    .img__alimentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .fotos {
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  .body__alimentacion .main__alimentacion .recetas__alimentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .acordeon__alimentacion {
+      width: 80%;
+      margin-bottom: 5%;
+
+      .div__acordeon__alimentacion {
+        height: 70px;
+        padding: 10% 1%;
+      }
+    }
+
+    .acordeon__alimentacion:hover .receta1 {
+      height: 1000px;
+      padding: 2%;
+
+      .imagen__receta {
+        width: 100;
+        height: 50;
+      }
+    }
+
+    .acordeon__alimentacion:hover .receta2 {
+      height: 1700px;
+      padding: 2%;
+
+      .imagen__receta {
+        width: 100;
+        height: 50;
+      }
+    }
+
+    .acordeon__alimentacion:hover .receta3 {
+      height: 1000px;
+      padding: 2%;
+
+      .imagen__receta {
+        width: 100;
+        height: 50;
+      }
+    }
+  }
+
+  .frase__alimentacion {
+    font-size: 2px;
+  }
+}

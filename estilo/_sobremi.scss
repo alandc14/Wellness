@@ -1,0 +1,109 @@
+.body__sobremi {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+
+  .main__sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% 7% 3% 7%;
+    padding: 2% 5% 2% 5%;
+
+    .section__sobremi {
+      display: flex;
+      flex-direction: column;
+
+      .titulos__sobremi {
+        font-family: "Castoro", serif;
+      }
+
+      .div__sobremi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .article__sobremi {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          justify-content: center;
+          text-align: justify;
+        }
+
+        .img__sobremi {
+          border: black 10px double;
+        }
+      }
+    }
+
+    .aside__sobremi {
+      margin: 3% 7% 3% 7%;
+      padding: 2% 3%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .info__sobremi {
+        border: black 3px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+        padding: 2%;
+
+        .titulos__sobremi {
+          font-family: "Castoro", serif;
+        }
+      }
+
+      .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .titulos__sobremi {
+          font-family: "Castoro", serif;
+        }
+
+        .iconos__redes__sobremi {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__sobremi .main__sobremi {
+    margin-top: 125px;
+
+    .section__sobremi .div__sobremi {
+      display: flex;
+      flex-direction: column;
+
+      .article__sobremi {
+        width: 100%;
+      }
+
+      .img__sobremi {
+        width: 100%;
+      }
+    }
+
+    .aside__sobremi {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: space-around;
+    }
+  }
+}

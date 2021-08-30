@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body__sobremi {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+}
+.body__sobremi .main__sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8% 7% 3% 7%;
+  padding: 2% 5% 2% 5%;
+}
+.body__sobremi .main__sobremi .section__sobremi {
+  display: flex;
+  flex-direction: column;
+}
+.body__sobremi .main__sobremi .section__sobremi .titulos__sobremi {
+  font-family: "Castoro", serif;
+}
+.body__sobremi .main__sobremi .section__sobremi .div__sobremi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body__sobremi .main__sobremi .section__sobremi .div__sobremi .article__sobremi {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  text-align: justify;
+}
+.body__sobremi .main__sobremi .section__sobremi .div__sobremi .img__sobremi {
+  border: black 10px double;
+}
+.body__sobremi .main__sobremi .aside__sobremi {
+  margin: 3% 7% 3% 7%;
+  padding: 2% 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.body__sobremi .main__sobremi .aside__sobremi .info__sobremi {
+  border: black 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  padding: 2%;
+}
+.body__sobremi .main__sobremi .aside__sobremi .info__sobremi .titulos__sobremi {
+  font-family: "Castoro", serif;
+}
+.body__sobremi .main__sobremi .aside__sobremi .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body__sobremi .main__sobremi .aside__sobremi .redes .titulos__sobremi {
+  font-family: "Castoro", serif;
+}
+.body__sobremi .main__sobremi .aside__sobremi .redes .iconos__redes__sobremi {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__sobremi .main__sobremi {
+    margin-top: 125px;
+  }
+  .body__sobremi .main__sobremi .section__sobremi .div__sobremi {
+    display: flex;
+    flex-direction: column;
+  }
+  .body__sobremi .main__sobremi .section__sobremi .div__sobremi .article__sobremi {
+    width: 100%;
+  }
+  .body__sobremi .main__sobremi .section__sobremi .div__sobremi .img__sobremi {
+    width: 100%;
+  }
+  .body__sobremi .main__sobremi .aside__sobremi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+}
+.body__alimentacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+}
+.body__alimentacion .main__alimentacion {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10% 7% 3% 7%;
+  padding: 2% 5% 2% 5%;
+}
+.body__alimentacion .main__alimentacion .section__alimentacion {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.body__alimentacion .main__alimentacion .section__alimentacion .titulos__alimentacion {
+  font-family: "Castoro", serif;
+}
+.body__alimentacion .main__alimentacion .img__alimentacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.body__alimentacion .main__alimentacion .img__alimentacion .fotos {
+  border: black 10px double;
+}
+.body__alimentacion .main__alimentacion .titulos__alimentacion {
+  font-family: "Castoro", serif;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion {
+  width: 40%;
+  margin-bottom: 1%;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion .div__acordeon__alimentacion {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: black 3px solid;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion .div__acordeon__alimentacion .titulo__acordeon__alimentacion {
+  font-family: "Castoro", serif;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion .info__acordeon__alimentacion {
+  width: 100%;
+  height: 0em;
+  overflow: hidden;
+  transition: 2s;
+  -webkit-transition: height 2s;
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion .info__acordeon__alimentacion .titulo__receta {
+  font-weight: bold;
+  margin-top: 1%;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion .info__acordeon__alimentacion .imagen__receta {
+  border: 1px solid black;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .info__acordeon__alimentacion {
+  border: black 1px solid;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta1 {
+  height: 910px;
+  padding: 2%;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta2 {
+  height: 1360px;
+  padding: 2%;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta3 {
+  height: 900px;
+  padding: 2%;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta4 {
+  height: 700px;
+  padding: 2%;
+}
+.body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .mas {
+  visibility: hidden;
+}
+.body__alimentacion .main__alimentacion .div__frase__alimentacion {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1%;
+}
+.body__alimentacion .main__alimentacion .div__frase__alimentacion .frase__alimentacion {
+  text-align: center;
+  font-family: "Allison";
+  font-size: 60px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__alimentacion .main__alimentacion {
+    margin-top: 125px;
+  }
+  .body__alimentacion .main__alimentacion .img__alimentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body__alimentacion .main__alimentacion .img__alimentacion .fotos {
+    margin-bottom: 5%;
+  }
+
+  .body__alimentacion .main__alimentacion .recetas__alimentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion .div__acordeon__alimentacion {
+    height: 70px;
+    padding: 10% 1%;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta1 {
+    height: 1000px;
+    padding: 2%;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta1 .imagen__receta {
+    width: 100;
+    height: 50;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta2 {
+    height: 1700px;
+    padding: 2%;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta2 .imagen__receta {
+    width: 100;
+    height: 50;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta3 {
+    height: 1000px;
+    padding: 2%;
+  }
+  .body__alimentacion .main__alimentacion .recetas__alimentacion .acordeon__alimentacion:hover .receta3 .imagen__receta {
+    width: 100;
+    height: 50;
+  }
+
+  .frase__alimentacion {
+    font-size: 2px;
+  }
+}
+.body__nuestrosplanes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+}
+.body__nuestrosplanes .main__nuestrosplanes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8% 7% 3% 7%;
+  padding: 2% 5% 2% 5%;
+  text-align: justify;
+}
+.body__nuestrosplanes .main__nuestrosplanes .titulos__nuestrosplanes {
+  font-family: "Castoro", serif;
+}
+.body__nuestrosplanes .main__nuestrosplanes .imgplanes__nuestrosplanes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__nuestrosplanes .main__nuestrosplanes {
+    margin-top: 125px;
+  }
+  .body__nuestrosplanes .main__nuestrosplanes .imgplanes__nuestrosplanes {
+    display: flex;
+    flex-direction: column;
+  }
+  .body__nuestrosplanes .main__nuestrosplanes img {
+    margin: 5% 2%;
+  }
+}
+.body__blog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+}
+.body__blog .main__blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8% 7% 3% 7%;
+  padding: 2% 5% 2% 5%;
+}
+.body__blog .main__blog .section__blog {
+  display: flex;
+  flex-direction: column;
+}
+.body__blog .main__blog .section__blog .titulos__blog {
+  font-family: "Castoro", serif;
+}
+.body__blog .main__blog .section__blog .article__blog {
+  display: flex;
+  flex-direction: column;
+  border: black 10px double;
+  padding: 2%;
+  margin: 2%;
+  text-align: justify;
+}
+.body__blog .main__blog .section__blog .article__blog .titulos__article__blog {
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__blog .main__blog {
+    margin-top: 125px;
+  }
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+}
+.body .portada__index {
+  width: 100%;
+  margin-top: 60px;
+}
+.body .main__index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body .main__index .section__index {
+  margin: 3% 7%;
+  padding: 2% 5% 2% 5%;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .main__index .section__index .titulos__index {
+  font-family: "Castoro", serif;
+}
+.body .main__index .img__index {
+  width: 60%;
+  margin: 3% 7%;
+  border: black 1px solid;
+}
+.body .main__index .aside__index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3% 7%;
+}
+.body .main__index .aside__index .aside__div__index {
+  width: 40%;
+  border: 10px double black;
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+.body .main__index .aside__index .aside__div__index .titulos__index {
+  font-family: "Castoro", serif;
+}
+.body .footer {
+  margin-bottom: 1%;
+}
+.body .footer .titulos__index {
+  font-family: "Castoro", serif;
+}
+.body .footer .redes__index {
+  border: black 3px solid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+.body .footer .redes__index .titulos__index {
+  font-family: "Castoro", serif;
+}
+.body .footer .redes__index .redes__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 768px) {
+  .body .portada__index {
+    margin-top: 100px;
+  }
+
+  .body .main__index .aside__index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body .main__index .aside__index .aside__div__index {
+    width: 80%;
+  }
+}/*# sourceMappingURL=estilo.css.map */

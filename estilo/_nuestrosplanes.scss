@@ -1,0 +1,43 @@
+.body__nuestrosplanes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  background-color: lightgreen;
+
+  .main__nuestrosplanes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% 7% 3% 7%;
+    padding: 2% 5% 2% 5%;
+    text-align: justify;
+
+    .titulos__nuestrosplanes {
+      font-family: "Castoro", serif;
+    }
+
+    .imgplanes__nuestrosplanes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 1%;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .body__nuestrosplanes .main__nuestrosplanes {
+    margin-top: 125px;
+
+    .imgplanes__nuestrosplanes {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      margin: 5% 2%;
+    }
+  }
+}
